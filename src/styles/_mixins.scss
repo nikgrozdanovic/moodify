@@ -1,0 +1,29 @@
+@use 'sass:math';
+
+@mixin min-mq($var) {
+  @media (min-width: #{$var}) {
+    @content;
+  }
+}
+
+@mixin el-size($width, $height) {
+  min-width: $width;
+  max-width: $width;
+  min-height: $height;
+  max-height: $height;
+}
+
+@mixin max-mq($var) {
+  @media (max-width: #{$var}) {
+    @content;
+  }
+}
+
+@mixin icon-hover {
+  transition: 0.3s ease-in-out;
+  will-change: transform;
+
+  &:hover {
+    transform: scale(1.05) translateY(-2px);
+  }
+}
