@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Clone the application and to install node modules run
 ```bash
 npm install
-
+```
 Run the development server:
 
 ```bash
