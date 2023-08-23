@@ -1,11 +1,19 @@
 .select {
-  // position: relative;
-  // display: inline-block;
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 300px;
   margin: 2%;
+
+  @include max-mq($sm) {
+    display: block;
+  }
+}
+
+.titleParagraph {
+  @include max-mq($sm) {
+    width: 100%;
+  }
+
 }
 
 .select select {
@@ -25,6 +33,10 @@
   background-position: right 0.75rem center;
   background-size: 16px 12px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  @include max-mq($sm) {
+    width: 100%;
+  }
 }
 
 .select select:disabled {

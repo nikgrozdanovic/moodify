@@ -8,7 +8,6 @@ export default function Home() {
   const mood = useAppSelector((state) => state.moodSliceReducer.mood)
   return (
     <main className={styles.main}>
-      {mood}
       <div className={styles.title}>Welcome to Moodify!🎉</div>
       <MoodPicker />
       <SongsList />

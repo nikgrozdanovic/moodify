@@ -36,7 +36,8 @@ const MoodPicker = () => {
   return (
     <div className={styles.container}>
       <div className={styles.select}>
-        Set your mood: <Select options={moods} onChange={onChange} />
+        <p className={styles.titleParagraph}>Set your mood: </p>
+        <Select options={moods} onChange={onChange} />
       </div>
     </div>
   )
